@@ -1,7 +1,5 @@
 package interfaces;
 
-import java.util.List;
-
 public class Generics<T extends Comparable<T>> implements IGenerics<T>{
     //Arreglo de tipo T
     T[] collection;
@@ -11,12 +9,19 @@ public class Generics<T extends Comparable<T>> implements IGenerics<T>{
         collection = obj;
     }
 
+    public Generics() {
+    }
 
-
+    public Generics(Number n1, Number n2) {
+    }
 
     @Override
-    public T minValue(T collection) {
+    public T sum(int index1, int index2) {
+        return null;
+    }
 
+    @Override
+    public T minValue(T[] collection) {
         T o1 = this.collection[0];
 
         for (int i = 1; i< this.collection.length; i++){
@@ -28,17 +33,12 @@ public class Generics<T extends Comparable<T>> implements IGenerics<T>{
     }
 
     @Override
-    public T sum(int index1, int index2) {
-        return null;
-    }
-
-    @Override
     public T product(int index1, int index2) {
-        return null;
+            return null;
     }
 
     @Override
-    public T maxValue(T collection) {
+    public T maxValue(T[] collection) {
         T o1 = this.collection[0];
 
         for (int i = 1; i< this.collection.length; i++){
@@ -48,6 +48,8 @@ public class Generics<T extends Comparable<T>> implements IGenerics<T>{
         }
         return o1;
     }
+
+
 
 
 }
