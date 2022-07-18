@@ -1,16 +1,22 @@
 package interfaces;
 
 import java.lang.reflect.Array;
-import java.util.Collection;
+import java.util.*;
 
-public class Main {
+public class Main<T extends Comparable<T>>{
+
     public static void main(String[] args) {
-         arr[] = {1,12,75};
 
-        Generics<T> genInt = new Generics<T>(arr);
+        Integer[] listaNumeros = {4,45,44,47,55,66};
 
-        System.out.println("Minimum Value: " + genInt.minValue());
-        System.out.println("Minimum Value: " + genInt.maxValue());
+
+        Generics<Integer> genInt = new Generics<Integer>(listaNumeros);
+
+
+
+
+        System.out.println("Minimum Value: " + genInt.minValue(listaNumeros));
+        System.out.println("Minimum Value: " + genInt.maxValue(listaNumeros));
 
     }
 }
