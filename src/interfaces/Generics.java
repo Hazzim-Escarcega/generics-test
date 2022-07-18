@@ -1,5 +1,7 @@
 package interfaces;
 
+import java.util.List;
+
 public class Generics<T extends Comparable<T>> implements IGenerics<T>{
     //Arreglo de tipo T
     T[] collection;
