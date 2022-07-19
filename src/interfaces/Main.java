@@ -1,10 +1,9 @@
 package interfaces;
 
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main<T extends Comparable<T>>{
+public class Main{
 
     public static void main(String[] args) {
         Integer[] listaNumeros = new Integer[5];
